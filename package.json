@@ -1,8 +1,8 @@
 {
-  "name": "node-ts",
-  "version": "0.0.0",
-  "author": "dayblox",
-  "description": "Node.js & TypeScript starter",
+  "name": "class-ai-server",
+  "version": "0.0.1",
+  "author": "Jason Suárez",
+  "description": "Class AI Server",
   "engines": {
     "node": ">=18.11",
     "pnpm": ">=7.27"
@@ -15,9 +15,13 @@
     "start": "node dist"
   },
   "dependencies": {
-    "esbuild": "^0.20.1"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "esbuild": "^0.20.1",
+    "express": "^4.19.2"
   },
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "@types/node": "^20.11.20"
   }
 }
