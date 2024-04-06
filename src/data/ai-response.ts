@@ -1,0 +1,19 @@
+ export const response = {
+    AIMessage: {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'LangSmith is a combination of two words – "Lang" derived from the German word "lang" meaning long, and "Smith" which is a surname associated with metalworking or craftsmanship. Together, LangSmith may signify a long-lasting or skilled craftsmanship in a particular field. It could also be a name of a company, brand, or individual.',
+    additional_kwargs: { function_call: undefined, tool_calls: undefined },
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'LangSmith is a combination of two words – "Lang" derived from the German word "lang" meaning long, and "Smith" which is a surname associated with metalworking or craftsmanship. Together, LangSmith may signify a long-lasting or skilled craftsmanship in a particular field. It could also be a name of a company, brand, or individual.',
+  name: undefined,
+  additional_kwargs: { function_call: undefined, tool_calls: undefined },
+  response_metadata: {
+    tokenUsage: { completionTokens: 70, promptTokens: 12, totalTokens: 82 },
+    finish_reason: 'stop'
+  }
+}
+}
+
