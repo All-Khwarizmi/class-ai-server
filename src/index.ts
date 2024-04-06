@@ -1,22 +1,15 @@
-import dotenv from 'dotenv'
-import express from 'express'
-import cors from 'cors'
-import { Request, Response } from 'express'
-
-dotenv.config()
-
-const app = express()
-app.use(cors())
-app.use(express.json())
-
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello World!')
-})
-
-app.listen(process.env.PORT, () => {
-  console.log(`Server is running on port ${process.env.PORT}`)
-})
-
-
-
-console.log(process.env.PORT)
+import { run } from "@backroad/backroad";
+run(async (br) => {
+  br.write({
+    body: `# 🛣️ Welcome to Backroad
+This is a quick start template to help you get started developing backroad apps. You can also checkout the examples on [stackblitz](https://stackblitz.com/@sudo-vaibhav/collections/backroad)`,
+  });
+  const input = br.textInput({
+    label: "Enter your name",
+    placeholder: "John Doe",
+  });
+  br.write({
+    body: `Hello ${input}!`,
+  });
+  
+});
