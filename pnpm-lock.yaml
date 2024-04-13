@@ -29,6 +29,9 @@ dependencies:
   langchain:
     specifier: ^0.1.31
     version: 0.1.31
+  openai:
+    specifier: ^4.33.1
+    version: 4.33.1
 
 devDependencies:
   '@types/express':
@@ -1011,7 +1014,7 @@ packages:
     dependencies:
       '@langchain/core': 0.1.54
       js-tiktoken: 1.0.10
-      openai: 4.33.0
+      openai: 4.33.1
       zod: 3.22.4
       zod-to-json-schema: 3.22.5(zod@3.22.4)
     transitivePeerDependencies:
@@ -2326,8 +2329,8 @@ packages:
       wrappy: 1.0.2
     dev: false
 
-  /openai@4.33.0:
-    resolution: {integrity: sha512-Sh4KvplkvkAREuhb8yZpohqsOo08cBBu6LNWLD8YyMxe8yCxbE+ouJYUs1X2oDPrzQGANj0rFNQYiwW9gWLBOg==}
+  /openai@4.33.1:
+    resolution: {integrity: sha512-0DH572aSxGTT1JPOXgJQ9mjiuSPg/7scPot8hLc5I1mfQxPxLXTZWJpWerKaIWOuPkR2nrB0SamGDEehH8RuWA==}
     hasBin: true
     dependencies:
       '@types/node': 18.19.30

@@ -1,5 +1,6 @@
 import { run } from "@backroad/backroad"
 import * as dotenv from "dotenv"
+import chatService from "./service/chat"
 dotenv.config()
 
 const ENV = process.env.NODE_ENV
@@ -19,7 +20,7 @@ run(async (br) => {
 		br.setValue("messages", [
 			...messages,
 			{ by: "human", content: input },
-			{ by: "ai", content: getGPTResponse(input) },
+			{ by: "ai", content: await chatService({ query: input }) },
 		])
 	}
 
