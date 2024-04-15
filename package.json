@@ -24,6 +24,7 @@
     "esbuild": "^0.20.1",
     "express": "^4.19.2",
     "langchain": "^0.1.31",
+    "langsmith": "^0.1.14",
     "openai": "^4.33.1"
   },
   "devDependencies": {
