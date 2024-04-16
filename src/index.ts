@@ -20,7 +20,13 @@ run(async (br) => {
 		br.setValue("messages", [
 			...messages,
 			{ by: "human", content: input },
-			{ by: "ai", content: await chatService({ query: input }) },
+			{ by: "ai", content: "I'm thinking..." },
+		])
+		const response = await chatService({ query: input })
+		br.setValue("messages", [
+			...messages,
+			{ by: "human", content: input },
+			{ by: "ai", content: response },
 		])
 	}
 
